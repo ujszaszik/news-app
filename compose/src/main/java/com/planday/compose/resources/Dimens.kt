@@ -35,12 +35,10 @@ object Dimens {
     val newsDescriptionTextSize = 18.sp
     val newsTitleTextSize = 20.sp
     val appBarTextSize = 24.sp
+    val splashFontSize = 48.sp
 
     // ICON
     val largerIconSize = 24.dp
+    val alertDialogIconSize = 40.dp
     val emptyListIconSize = 240.dp
-
-    // LOGO
-    val logoHeight = 150.dp
-    val logoWidth = 100.dp
 }

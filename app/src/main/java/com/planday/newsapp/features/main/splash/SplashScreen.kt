@@ -9,7 +9,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.unit.sp
 import com.planday.compose.layout.DefaultSpacer
 import com.planday.compose.resources.Colors
 import com.planday.compose.resources.Dimens
@@ -30,7 +29,7 @@ fun SplashScreen() {
             color = Colors.white,
             fontWeight = FontWeight.Bold,
             fontFamily = Fonts.enduranceFamily,
-            fontSize = 48.sp
+            fontSize = Dimens.splashFontSize
         )
 
         DefaultSpacer()

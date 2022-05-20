@@ -50,7 +50,7 @@ fun ReposAlertDialog(
             ) {
 
                 Icon(
-                    modifier = Modifier.size(40.dp),
+                    modifier = Modifier.size(Dimens.alertDialogIconSize),
                     imageVector = imageVector,
                     tint = Colors.red,
                     contentDescription = null

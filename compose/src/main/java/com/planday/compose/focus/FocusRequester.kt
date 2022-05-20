@@ -13,6 +13,8 @@ import androidx.compose.ui.unit.toSize
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
+private const val FOCUS_REQUEST_DELAY = 300L //ms
+
 @SuppressLint("ComposableNaming")
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
@@ -20,7 +22,7 @@ fun BringIntoViewRequester.requestFocusTo(size: IntSize) {
     val scope = rememberCoroutineScope()
     LaunchedEffect("Request Focus to Element") {
         scope.launch {
-            delay(300)
+            delay(FOCUS_REQUEST_DELAY)
             bringIntoView(Rect(Offset.Zero, size.toSize()))
         }
     }

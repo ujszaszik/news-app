@@ -8,8 +8,6 @@ data class Resource<out T>(val status: Status, val data: T?, val errorMessage: S
         LOADING
     }
 
-    val isLoading = status == Status.LOADING
-
     companion object {
 
         fun <T> success(data: T): Resource<T> {
